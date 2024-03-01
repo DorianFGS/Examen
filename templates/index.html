@@ -1,0 +1,25 @@
+{% extends './layout.html' %}
+
+{% block title %}Menú Principal{% endblock %}
+
+{% block body %}
+<div class="mx-auto p-2" style="width: 800px;">
+    <div class="container text-center">
+        <p class="fs-1">Bienvenido a mi portafolio de habilidades.</p>
+        <p class="fs-4">Mi nombre es Dorian Galindo y aquí puedes encontrar varias cosas acerca de mi.</p>
+        <div class="row">
+          <div class="col">
+            <p class="fs-3">Habilidades</p>
+            <img src="https://cdn.evalart.com/wp-content/uploads/2022/09/nggallery_import/Habilidades-y-Competencias-es-lo-mismo-Evalart.jpg" alt="Habilidades" height="250">
+            <a href="/skills" type="button" class="btn btn-outline-dark">Ver las Habilidades</a>
+          </div>
+          <div class="col">
+            <p class="fs-3">Datos Personales</p> 
+            <img src="https://idaip.org.mx/sitio/wp-content/uploads/2017/08/que-es-PDP-1024x644.png" height="250"  alt="Datos Pesonales">
+            <a href="/personalData" type="button" class="btn btn-outline-dark">Ver los Datos Personales</a>
+          </div>
+        </div>
+      </div>
+</div>
+
+{% endblock %}

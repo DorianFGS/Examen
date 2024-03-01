@@ -1,0 +1,22 @@
+{% extends './layout.html' %}
+
+{% block title %}Datos{% endblock %}
+
+
+{% block body %}
+<div class="container text-center">
+    <p class="fs-2">
+        Muchas gracias por completar el formulario.
+    </p>
+    <p class="fs-4">
+        Estos son los datos que ingresó:
+    </p>
+    <div style="width: 300px;" class="container text-center">
+        <ul>
+            <li>Correo: {{data.correo}}</li>
+            <li>Nombre: {{data.nombre}}</li>
+            <li>Contraseña: {{data.contraseña}}</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
